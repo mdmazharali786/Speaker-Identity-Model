@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Audio File</title>
+</head>
+<body>
+     <h1>Speaker Identity Model- Upload an Audio File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="audio_file">Select an audio file:</label>
+        <input type="file" id="audio_file" name="audio_file" accept="audio/*">
+        <button type="submit">Upload</button>
+    </form>
+    
+    <!-- Display the input and output -->
+    {% if input_text %}
+        <p>Input: {{ input_text }}</p>
+    {% endif %}
+    {% if output_text %}
+        <p>Output: {{ output_text }}</p>
+    {% endif %}
+</body>
+</html>
+
