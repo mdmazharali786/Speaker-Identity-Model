@@ -14,13 +14,18 @@
         <button type="submit">Upload</button>
     </form>
     
-    <!-- Display the input and output -->
-    {% if input_text %}
-        <p>Input: {{ input_text }}</p>
-    {% endif %}
-    {% if output_text %}
-        <p>Output: {{ output_text }}</p>
-    {% endif %}
+	<h3> Predicted Speaker List </h3>
+    <!-- Display the output -->
+	{% block body %}
+	{% if pred_speaker %}
+	<ul>
+		{% for each_speaker in pred_speaker %}
+			<li>{{ each_speaker }}</li>
+    		{% endfor %}
+	</ul>
+	{% endif %}
+	{% endblock %}
+
 </body>
 </html>
 
