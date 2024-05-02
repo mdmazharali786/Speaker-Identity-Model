@@ -62,7 +62,7 @@ def predict_speaker(emb_data):
     #print(speaker_set_with_score)
     speaker_set = set()
     for spkr, proba in speaker_set_with_score.items():
-        if np.mean(proba)>=0.7:
+        if np.median(proba)>=0.5:
             speaker = label_encoder.inverse_transform([spkr])[0]
         else:
             speaker = 'Unknown'
@@ -107,5 +107,3 @@ def allowed_file(filename):
 
 if __name__ == '__main__':
     app.run()
-
-    

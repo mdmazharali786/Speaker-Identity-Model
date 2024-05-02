@@ -16,7 +16,7 @@ Datasource- Some audios extracted from youtube videos of ipl cricbuz discussion.
 These are the only link from which audio is extracted and used for training model. Model can identity these speaker and other than that it indentify as unknown.
 
 ## Recommendation for testing the model api.
-Download any audio from cricbuzz youtube video having english speech. Do not upload more than 15 min audio response will be more delayed as the server is colab free tier so response time is not setisfactory. Best will be to uplaod up 5 or 10 min audio in any of the format - "mp3, mp4, m4a, wav, flac etc".
+Download any audio from cricbuzz youtube video having english speech. Do not upload more than 15 min audio response will be more delayed as the server is colab free tier and gdrive to upload download, read etc activity so response time is not setisfactory. It takes aprox 2 minutes to display the result on 15 min audio. Best will be to uplaod up 5 or 10 min audio in any of the format - "mp3, mp4, m4a, wav, flac etc". 
 
 ### Instruction on how to run the mmodel.
 
